@@ -1,0 +1,24 @@
+{
+  "name": "note_taker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eroux13/note_taker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eroux13/note_taker/issues"
+  },
+  "homepage": "https://github.com/eroux13/note_taker#readme",
+  "dependencies": {
+    "nodemon": "^2.0.7",
+    "util": "^0.12.3"
+  }
+}
