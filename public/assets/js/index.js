@@ -50,15 +50,18 @@ const deleteNote = (id) =>
         },
     });
 
+// There is a bug in the given public JS file that prevents the user from creating a new note after selecting an existing one
+// The bug occurs because the 'readonly' attribute is added when selecting an existing note, but that attribute is not removed when rendering a blank (or new) note
 const renderActiveNote = () => {
     hide(saveNoteBtn);
-
     if (activeNote.id) {
         noteTitle.setAttribute('readonly', true);
         noteText.setAttribute('readonly', true);
         noteTitle.value = activeNote.title;
         noteText.value = activeNote.text;
     } else {
+        noteTitle.removeAttribute('readonly'); //Remove readonly
+        noteText.removeAttribute('readonly');  //Remove readonly
         noteTitle.value = '';
         noteText.value = '';
     }
