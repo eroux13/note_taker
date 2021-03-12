@@ -8,7 +8,7 @@
 
 This is a note taker application that allows a user to create, read, and delete notes. The purpose of this project is to demonstrate my ability to work in the back-end by building a web server. Given the front-end code, my duty was to build a server that would connect both the front-end and the back-end of the project. This project also features the use of [Express.js](https://expressjs.com/) and [Node.js](https://nodejs.org/en/).
 
-Project Deployed on [Heroku](https://git.heroku.com/young-harbor-17190.git)
+Project Deployed on [Heroku](https://young-harbor-17190.herokuapp.com/)
 
 ## Table of Contents
 
