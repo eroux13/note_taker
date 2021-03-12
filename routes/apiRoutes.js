@@ -35,7 +35,6 @@ module.exports = (app) => {
         return console.log(`New note added: ${newNote.title}`)
     })
     // Delete selected note
-    // Work in progress
     app.delete("/api/notes/:id", (req, res) => {
         let notes = fs.readFileSync(path.join(__dirname, "./../db/db.json"), "utf8");
         notes = JSON.parse(notes);
