@@ -37,7 +37,7 @@ To start the application, on the homepage, the user needs to click on the "Get S
 
 From here, the usage of this project is to let a user keep track of notes and to create new notes. There is also a feature to delete notes once the note is no longer needed (work in progress).
 
-![Notes Page Screenshot](./public/assets/images/NotesPageScreenshot.png)
+![Notes Page Screenshot](./public/assets/images/notesPageScreenshot.png)
 
 ## Contributors
 
