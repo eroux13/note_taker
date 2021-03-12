@@ -40,8 +40,8 @@ module.exports = (app) => {
         let notes = fs.readFileSync(path.join(__dirname, "./../db/db.json"), "utf8");
         notes = JSON.parse(notes);
         const deleteID = req.params.id;
-        const deleteNote = notes.map(function (note) { return note.deleteID }).indexOf(deleteID);
-        noteData.splice(deleteNote, 1);
+        const deleteNote = notes.map(function (note) { return note.id }).indexOf(deleteID);
+        notes.splice(deleteNote, 1);
         fs.writeFile(path.join(__dirname, "./../db/db.json"), JSON.stringify(notes, '\t'), err => {
             if (err) throw err;
             return true;
