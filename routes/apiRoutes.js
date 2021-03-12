@@ -35,4 +35,18 @@ module.exports = (app) => {
         return console.log(`New note added: ${newNote.title}`)
     })
     // Delete selected note
+    // Work in progress
+    app.delete("/api/notes/:id", (req, res) => {
+        let notes = fs.readFileSync(path.join(__dirname, "./../db/db.json"), "utf8");
+        notes = JSON.parse(notes);
+        const deleteID = req.params.id;
+        const deleteNote = notes.map(function (note) { return note.deleteID }).indexOf(deleteID);
+        noteData.splice(deleteNote, 1);
+        fs.writeFile(path.join(__dirname, "./../db/db.json"), JSON.stringify(notes, '\t'), err => {
+            if (err) throw err;
+            return true;
+        });
+        res.json(notes);
+        return console.log(`Deleted note: ${deleteID}`);
+    })
 }
