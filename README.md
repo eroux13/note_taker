@@ -1,7 +1,7 @@
 # Note Taker
-![HTML](https://img.shields.io/badge/HTML-21.4%25-red)
-![CSS](https://img.shields.io/badge/CSS-10.7%25-purple)
-![JavaScript](https://img.shields.io/badge/JavaScript-67.9%25-yellow)
+![HTML](https://img.shields.io/badge/HTML-20.0%25-red)
+![CSS](https://img.shields.io/badge/CSS-10.0%25-purple)
+![JavaScript](https://img.shields.io/badge/JavaScript-70.0%25-yellow)
 ![License](https://img.shields.io/badge/License-MIT-blue)
 
 ## Description
@@ -35,7 +35,7 @@ To start the application, on the homepage, the user needs to click on the "Get S
 
 ![Homepage Screenshot](./public/assets/images/homepageScreenshot.png)
 
-From here, the usage of this project is to let a user keep track of notes and to create new notes. There is also a feature to delete notes once the note is no longer needed (work in progress).
+From here, the usage of this project is to let a user keep track of notes and to create new notes. There is also a feature to delete notes once the note is no longer needed.
 
 ![Notes Page Screenshot](./public/assets/images/notesPageScreenshot.png)
 
