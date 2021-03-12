@@ -3,22 +3,24 @@
 const fs = require("fs");
 // Require path for express
 const path = require("path");
+// Require uniqid for unique id for deleting notes
+const uniqid = require("uniqid");
 // Require provided json file
 const noteData = require("./../db/db.json");
 
 module.exports = (app) => {
-
-
+    // Retrieve saved notes
     app.get("/api/notes", (req, res) => {
         let notes = fs.readFileSync(path.join(__dirname, "./../db/db.json"), "utf8");
         notes = JSON.parse(notes);
         res.json(notes)
     });
-
+    // Crete new note
     app.post("/api/notes", (req, res) => {
         let notes = fs.readFileSync(path.join(__dirname, "./../db/db.json"), "utf8");
         notes = JSON.parse(notes);
-        let noteID = noteData.length;
+        // Create a unique ID for each note
+        let noteID = uniqid("id:");
         let newNote = {
             id: noteID,
             title: req.body.title,
@@ -32,4 +34,5 @@ module.exports = (app) => {
         res.json(newNote);
         return console.log(`New note added: ${newNote.title}`)
     })
+    // Delete selected note
 }
