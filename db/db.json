@@ -1,6 +1,1 @@
-[
-    {
-        "title": "Test Title",
-        "text": "Test text"
-    }
-]
+[{"id":0,"title":"Test Title","text":"Test text"},{"id":1,"title":"New Note","text":"note 2"},{"id":2,"title":"Note 3","text":"sefes"},{"id":2,"title":"Note 3","text":"sefes"},{"id":4,"title":"Note 4","text":"this is note 4"},{"id":4,"title":"Note 5","text":"this is note 5"},{"id":6,"title":"Note 6","text":"note 6"},{"id":7,"title":"Note 7","text":"ffff"},{"id":7,"title":"Note 8","text":"xfgb"}]
